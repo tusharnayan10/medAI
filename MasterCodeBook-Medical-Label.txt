@@ -1,0 +1,685 @@
+MEDICAL AI METADATA ANNOTATION CODEBOOK
+
+====================================================
+TASK
+====================================================
+
+You are an expert qualitative research annotator specializing in Medical AI, Security, Privacy, and Trust (SP&T).
+
+Your task is to analyze Reddit discussions related to Healthcare AI and assign labels according to the taxonomy below.
+
+You must carefully read ALL available information before assigning labels:
+
+1. TITLE
+2. POST
+3. TOP COMMENTS
+4. SECURITY-PRIVACY-TRUST-RELATED-NOTES (if available)
+5. FEW-SHOT EXAMPLES (if provided)
+
+====================================================
+ANNOTATION PHILOSOPHY
+====================================================
+
+1. Focus on the PRIMARY purpose of the discussion.
+2. Assign EXACTLY ONE label for each category.
+3. Do NOT assign multiple labels.
+4. Prefer specific labels over broad labels.
+5. Do not infer information that is not supported by the text.
+6. Use "Other" only when no existing label reasonably fits.
+7. Consider TITLE, POST, TOP COMMENTS, and NOTES together before making a decision.
+
+====================================================
+CATEGORY 1: POST-TYPE
+(EXACTLY ONE LABEL)
+====================================================
+
+Definition:
+The user asks about their own health, symptoms, diagnosis, treatment, test results, reports, or medical decisions.
+
+Include:
+- Symptom interpretation
+- Lab result interpretation
+- MRI/CT/X-ray/report explanation
+- Diagnosis or treatment questions
+- Medication or side-effect questions
+- “Should I be worried?” health questions
+- Asking ChatGPT/AI to explain personal medical information
+
+Exclude:
+- General health discussion not about the user → AI General Discussion/Opinion
+- Asking for a tool recommendation → Request for Advice
+- Describing use of an AI tool without seeking medical guidance → AI Tool Experience
+
+Examples:
+- "Can ChatGPT explain my MRI report?"
+- "Should I be worried about these symptoms?"
+
+----------------------------------------------------
+
+AI Product / Startup
+
+Definition:
+The post discusses building, launching, validating, promoting, or commercializing an AI healthcare product, tool, company, or startup.
+
+Include:
+- Startup ideas
+- Product launches
+- Product validation
+- User feedback requests
+- Market research
+- Commercial AI healthcare tools
+- Founder/team discussions
+- AI product demos or promotion
+
+Exclude:
+- Personal experience using an existing tool → AI Tool Experience
+- Technical model/dataset discussion without product focus → Request for Advice or Other
+- General opinion about AI healthcare products → AI General Discussion/Opinion
+
+Example:
+- "We built an AI radiology assistant."
+
+----------------------------------------------------
+
+AI Tool Experience
+
+Definition:
+The user describes first-hand experience using a healthcare-related AI tool.
+
+Include:
+- Personal use of ChatGPT or another AI tool
+- Reviews of AI tools
+- Tool performance observations
+- AI gave a good/bad/incorrect answer
+- User tested an AI tool on medical content
+- Experience with AI symptom checkers, scribes, or health apps
+
+Exclude:
+- Asking for diagnosis or treatment guidance → Personal Medical Query
+- Asking which tool to use → Request for Advice
+- Product promotion or startup feedback → AI Product / Startup
+- Broad opinion without personal use → AI General Discussion/Opinion
+
+
+Example:
+- "I used ChatGPT to analyze my bloodwork."
+
+----------------------------------------------------
+
+AI General Discussion/Opinion
+
+Definition:
+The post discusses broad views, opinions, predictions, debates, or societal implications of AI in healthcare.
+
+Include:
+- Future of AI in healthcare
+- Benefits and risks of medical AI
+- AI replacing doctors
+- Ethical concerns
+- Public trust concerns
+- Broad policy or societal debate
+- General predictions or opinions
+
+Exclude:
+- User asks for personal health advice → Personal Medical Query
+- User describes using a tool → AI Tool Experience
+- User asks what tool/resource to use → Request for Advice
+- Specific workflow or hospital operations issue → Workflow/Operational Issue
+
+Example:
+- "AI will completely transform healthcare."
+
+----------------------------------------------------
+
+Career & Education Discussion
+
+Definition:
+The post focuses on education, training, career planning, professional development, or AI-assisted learning in medicine or healthcare.
+
+Include:
+- Medical school
+- Nursing school
+- Residency
+- Board exams
+- USMLE preparation
+- Learning medical concepts
+- Career planning
+- AI use for studying
+- AI use for coursework, applications, or training
+
+Exclude:
+- Asking for tool recommendations outside education/career → Request for Advice
+- Discussing workplace operations → Workflow/Operational Issue
+- General opinion about AI in healthcare → AI General Discussion/Opinion
+
+Example:
+- "Should I use ChatGPT for USMLE preparation?"
+
+----------------------------------------------------
+
+Workflow/Operational Issue
+
+Definition:
+The post focuses on healthcare workflow, operations, administration, documentation, scheduling, billing, EHRs, or organizational processes.
+
+Include:
+- AI scribes
+- Documentation burden
+- Clinical note generation
+- Scheduling
+- Billing and coding
+- Insurance claims
+- Prior authorization
+- EHR integration
+- Hospital or clinic workflow
+- Operational efficiency or disruption
+
+Exclude:
+- AI used for diagnosis or treatment discussion → Personal Medical Query or AI General Discussion/Opinion
+- Product/startup promotion → AI Product / Startup
+- Personal tool use without workflow focus → AI Tool Experience
+
+Example:
+- "Our AI scribe is slowing down clinic workflows."
+
+----------------------------------------------------
+
+Request for Advice
+
+Definition:
+The user asks for recommendations, suggestions, guidance, tools, resources, or next steps that are not about diagnosing or treating their own medical condition.
+
+Include:
+- Tool recommendations
+- Resource suggestions
+- Research advice
+- Career advice
+- Project advice
+- Study-resource advice
+- “Which AI tool should I use?”
+- “How should I approach this?”
+
+Exclude:
+- Personal diagnosis/treatment/lab-result advice → Personal Medical Query
+- Factual question without advice-seeking → Other or AI General Discussion/Opinion
+- Education/career-centered discussion → Career & Education Discussion if dominant
+
+Example:
+- "Which AI tool should I use for research?"
+
+----------------------------------------------------
+
+Other
+
+Definition:
+Healthcare-related content that does not clearly fit any predefined post type.
+
+Include:
+- Unclear or very short posts
+- Off-topic or mixed posts
+- Posts with no dominant purpose
+- General healthcare content where AI relevance is weak or unclear
+- Content that does not match the above labels
+
+Exclude:
+- Use a specific label whenever one clearly applies.
+
+
+====================================================
+CATEGORY 2: MEDICAL-DOMAIN
+(EXACTLY ONE LABEL)
+====================================================
+
+Clinical AI
+
+Definition:
+AI supports diagnosis, treatment, clinical interpretation, risk prediction, or clinical decision-making.
+
+
+Include:
+- Diagnosis or disease detection
+- Treatment recommendations
+- Clinical decision support
+- Radiology, pathology, dermatology, cardiology AI
+- AI interpreting scans, lab results, images, or clinical notes
+- AI predicting patient risk, outcomes, deterioration, or mortality
+- Concerns about AI causing misdiagnosis or unsafe clinical decisions
+
+Exclude:
+- Documentation, billing, scheduling, or hospital workflow only → Administrative AI
+- Patient directly using AI for health advice → Patient-Facing AI
+- Building/training/evaluating a medical AI model → Development / Research AI
+- Studying or summarizing medical content → Other AI Usage
+
+----------------------------------------------------
+
+Administrative AI
+
+Definition:
+AI supports healthcare administration, documentation, operations, or workflow.
+
+Include:
+- Medical scribes
+- Clinical note generation
+- Transcription of doctor-patient conversations
+- Billing and coding automation
+- Insurance claims or prior authorization
+- Appointment scheduling
+- Patient intake forms
+- EHR documentation support
+- Hospital workflow automation
+- Reducing paperwork or clinician burnout
+
+Exclude:
+- AI making diagnosis or treatment decisions → Clinical AI
+- AI giving health guidance directly to patients → Patient-Facing AI
+- Building or evaluating AI systems → Development / Research AI
+- General writing, studying, or productivity use → Other AI Usage
+
+----------------------------------------------------
+
+Patient-Facing AI
+
+Definition:
+AI directly interacts with patients, consumers, or non-clinician users for health-related support.
+
+Include:
+- Symptom checkers
+- Health chatbots
+- Mental-health chatbots
+- AI therapy bots
+- Patient-facing medical assistants
+- Wearables or health-monitoring apps
+- Patients asking ChatGPT about symptoms, medications, lab results, or diagnoses
+- Consumer use of AI for health decisions
+
+Exclude:
+- AI used by clinicians for care decisions → Clinical AI
+- AI used for hospital workflow or documentation → Administrative AI
+- Building/evaluating patient-facing AI tools → Development / Research AI
+- Students using AI for coursework → Other AI Usage
+
+----------------------------------------------------
+
+Development / Research AI
+
+Definition:
+Discussion focuses on building, training, evaluating, benchmarking, validating, or researching healthcare AI systems.
+
+Definition:
+The post focuses on building, training, testing, validating, benchmarking, or researching healthcare AI systems.
+
+Include:
+- Dataset creation or annotation
+- Model training or fine-tuning
+- Benchmarking medical AI models
+- Validating healthcare AI systems
+- Research studies on medical AI
+- Model performance evaluation
+- Bias, fairness, or robustness testing
+- Synthetic medical data for training
+- Clinical validation studies
+- Technical research papers on healthcare AI
+
+Exclude:
+- Actual diagnosis or treatment use → Clinical AI
+- AI scribes or hospital workflow → Administrative AI
+- Patients using AI tools → Patient-Facing AI
+- General academic writing, studying, or summarizing → Other AI Usage
+
+----------------------------------------------------
+
+Other AI Usage
+
+Definition:
+AI used for educational, academic, professional, research-support, or productivity purposes outside direct healthcare delivery.
+
+Definition:
+AI is used in a medical, academic, or professional context, but not for direct care, patient interaction, administration, or medical AI development.
+
+Include:
+- Medical students using ChatGPT to study
+- AI for essays, reports, resumes, or applications
+- Literature review assistance
+- Summarizing medical papers
+- Preparing presentations
+- General productivity for healthcare workers
+- Career advice in medicine
+- Learning medical concepts
+- Broad AI-in-medicine discussion without a specific use-case
+
+Exclude:
+- Diagnosis, treatment, or clinical decisions → Clinical AI
+- Documentation, billing, scheduling, or workflow → Administrative AI
+- Patient health advice or chatbot interaction → Patient-Facing AI
+- Building, training, or evaluating medical AI → Development / Research AI
+
+
+====================================================
+CATEGORY 3: STAKEHOLDER
+(EXACTLY ONE LABEL)
+====================================================
+
+Clinician
+
+Definition:
+Healthcare professionals involved in patient care.
+
+Include:
+- Physicians, nurses, pharmacists, therapists
+- Clinicians discussing clinical work, patients, diagnosis, treatment, or workflow
+- Healthcare providers using or evaluating AI in practice
+
+Exclude:
+- Medical students or residents mainly discussing training → Student / Trainee
+- Hospital managers, billing staff, schedulers → Admin / Operations
+- General public discussing doctors or healthcare → General Audience
+
+----------------------------------------------------
+
+Patient
+
+Definition:
+Individuals discussing their own health, diagnosis, treatment, symptoms, or healthcare experience.
+
+Include:
+- Personal symptoms or diagnoses
+- Personal treatment experience
+- Use of AI for own health decisions
+- Concerns about personal medical data or care
+
+Exclude:
+- General discussion about patients as a group → General Audience
+- Clinician discussing patients professionally → Clinician
+- Student discussing patient cases for learning → Student / Trainee
+
+
+----------------------------------------------------
+
+General Audience
+
+Definition:
+A public or non-specialized perspective with no clear professional, patient, developer, student, or admin role.
+
+Include:
+- General opinions about medical AI
+- Public concerns about healthcare AI
+- Broad discussion of AI in medicine
+- News reactions without a clear role
+
+Exclude:
+- Personal medical experience → Patient
+- Technical model discussion → Developer
+- Medical training context → Student / Trainee
+- Hospital operations context → Admin / Operations
+
+----------------------------------------------------
+
+Developer
+
+Definition:
+Individuals building, researching, evaluating, deploying, or technically analyzing AI systems.
+
+Include:
+- Model training, fine-tuning, deployment
+- Dataset creation or evaluation
+- Benchmarking or validation
+- App/tool development
+- Technical implementation or coding discussion
+- AI researchers or engineers
+
+Exclude:
+- Medical students using AI to study → Student / Trainee
+- Clinicians using AI in care without technical focus → Clinician
+- General users discussing AI tools non-technically → General Audience
+
+
+----------------------------------------------------
+
+Student / Trainee
+
+Definition:
+Individuals in a learning or training role.
+
+Include:
+- Medical students
+- Nursing students
+- Residents or interns
+- Graduate students
+- Trainees using AI for learning, exams, research, or assignments
+
+Exclude:
+- Fully practicing clinicians discussing patient care → Clinician
+- Developers building systems outside a student/training context → Developer
+- General public asking about AI → General Audience
+
+----------------------------------------------------
+
+Admin / Operations
+
+Definition:
+Individuals involved in healthcare administration, management, billing, scheduling, insurance, or operations.
+
+Include:
+- Hospital administrators
+- Billing/coding staff
+- Insurance or claims workers
+- Scheduling staff
+- Operations managers
+- EHR/workflow managers
+- People discussing AI for administrative efficiency
+
+Exclude:
+- Clinicians discussing documentation burden from care perspective → Clinician
+- Developers building admin tools → Developer
+- General discussion of hospital automation → General Audience
+
+----------------------------------------------------
+
+Unknown
+
+Definition:
+The post does not provide enough information to infer the stakeholder role.
+
+Include:
+- No clear speaker role
+- Ambiguous or context-free statements
+- Posts only sharing links/titles without perspective
+- Role cannot be confidently inferred
+
+Exclude:
+- Use General Audience if the post clearly reflects a public/non-specialist opinion
+- Use Patient if the person discusses their own health
+- Use Developer if technical AI-building details are central
+
+====================================================
+CATEGORY 4: USER-INTENT
+(EXACTLY ONE LABEL)
+====================================================
+
+Seeking Advice
+
+The user wants recommendations, guidance, suggestions, or help deciding what to do.
+
+Include:
+- Asking what action to take
+- Asking for recommendations
+- Asking whether something is safe, appropriate, or worth using
+- Career, study, medical, or tool-use advice
+
+Exclude:
+- Pure factual question → Asking Question
+- Technical implementation help → Technical Discussion
+- Personal story without asking for guidance → Sharing Experience
+
+----------------------------------------------------
+
+Sharing Experience
+
+Definition:
+The user mainly describes a personal experience, event, or situation.
+
+Include:
+- Personal use of AI
+- Personal medical or healthcare experience
+- Workplace experience
+- Story about using or observing an AI tool
+
+Exclude:
+- Main goal is warning about a risk → Reporting Concern
+- Main goal is asking for advice → Seeking Advice
+- Main goal is debating a viewpoint → Opinion / Debate
+
+----------------------------------------------------
+
+Asking Question
+
+Definition:
+The user mainly seeks factual or informational answers.
+
+Include:
+- What, why, how, when questions
+- Requests for explanation
+- Clarification about AI tools, policies, or healthcare use
+- General information-seeking
+
+Exclude:
+- Asking what to do → Seeking Advice
+- Asking how to build/evaluate a model → Technical Discussion
+- Asking for learning/study help → Educational / Learning
+
+----------------------------------------------------
+
+Reporting Concern
+
+Definition:
+The user mainly highlights a risk, issue, failure, limitation, harm, or worry.
+
+Include:
+- Privacy or security concern
+- Trust or safety concern
+- Misdiagnosis or hallucination concern
+- Bias, fairness, accountability, or transparency concern
+- Warning about harmful AI behavior
+- Complaints about unreliable tools
+
+Exclude:
+- Neutral personal story → Sharing Experience
+- Opinion without clear risk/problem → Opinion / Debate
+- Technical bug/model issue discussion → Technical Discussion
+
+----------------------------------------------------
+
+Technical Discussion
+
+Definition:
+The user mainly discusses technical implementation, development, datasets, models, experiments, evaluation, or deployment.
+
+Include:
+- Model training or fine-tuning
+- Dataset creation
+- Benchmarking
+- Evaluation metrics
+- Coding or implementation
+- Deployment, APIs, prompts, system design
+- Model validation or performance testing
+
+Exclude:
+- General factual question about AI → Asking Question
+- Student learning about concepts → Educational / Learning
+- Public opinion about technology → Opinion / Debate
+
+
+----------------------------------------------------
+
+News / Information Sharing
+
+Definition:
+The user mainly shares an external update, news item, paper, report, article, announcement, or factual development.
+
+Include:
+- News articles
+- Research papers
+- Product announcements
+- Policy updates
+- Reports or studies
+- Links with brief commentary
+
+Exclude:
+- Strong personal opinion about the news → Opinion / Debate
+- Concern or warning about the news → Reporting Concern
+- Technical analysis of the paper/model → Technical Discussion
+
+----------------------------------------------------
+
+Opinion / Debate
+
+Definition:
+The user mainly expresses a viewpoint, argument, belief, prediction, disagreement, or invites debate.
+
+Include:
+- Opinions about AI replacing doctors
+- Arguments for or against medical AI
+- Predictions about healthcare AI
+- Ethical or policy debates
+- Value judgments without a specific advice request
+
+Exclude:
+- Concrete risk report → Reporting Concern
+- Factual question → Asking Question
+- Personal story → Sharing Experience
+
+
+----------------------------------------------------
+
+Educational / Learning
+
+The user mainly wants to learn, study, teach, explain, or understand concepts for educational purposes.
+
+Include:
+- Studying medical concepts
+- Learning AI/healthcare topics
+- Exam preparation
+- Class assignments
+- Requests for explanation in a learning context
+- Teaching or educational resource requests
+
+Exclude:
+- General factual question without learning context → Asking Question
+- Technical implementation discussion → Technical Discussion
+- Career advice → Seeking Advice
+
+----------------------------------------------------
+
+Other
+
+Definition:
+The intent does not clearly fit any predefined category.
+
+Include:
+- Unclear intent
+- Off-topic content
+- Very short or context-free posts
+- Mixed intent with no dominant purpose
+
+Exclude:
+- Use a specific label if one intent is clearly dominant
+
+====================================================
+OUTPUT FORMAT
+====================================================
+
+Return ONLY valid JSON.
+
+{
+  "Post_Type": "",
+  "Medical_Domain": "",
+  "Stakeholder": "",
+  "User_Intent": ""
+}
+
+Rules:
+- EXACTLY ONE label per category.
+- No multiple labels.
+- No explanations unless explicitly requested.
+- Use only labels defined in this codebook.
