@@ -1,60 +1,44 @@
-event_name,event_date,event_type
-ChatGPT,2022-11-30,Product/Feature Releases
-Med-PaLM,2022-12-31,Product/Feature Releases
-GPT-4,2023-03-14,Product/Feature Releases
-Med-PaLM 2,2023-03-31,Product/Feature Releases
-Claude 2,2023-07-11,Product/Feature Releases
-MEDITRON-70B,2023-11-30,Product/Feature Releases
-Gemini 1.0,2023-12-06,Product/Feature Releases
-GPT-4o,2024-05-13,Product/Feature Releases
-Claude 3.5 Sonnet,2024-06-21,Product/Feature Releases
-Gemini 2.0,2024-12-11,Product/Feature Releases
-MedGemma,2025-05-30,Product/Feature Releases
-AlphaFold 2,2020-11-30,Product/Feature Releases
-PaLM,2022-04-01,Product/Feature Releases
-MedLM,2023-12-13,Product/Feature Releases
-Claude 3,2024-03-01,Product/Feature Releases
-BioMedLM,2024-03-01,Product/Feature Releases
-Med-Gemini,2024-05-06,Clinical AI Deployment
-AlphaFold 3,2024-05-08,Product/Feature Releases
-Personal Health LLM,2024-06-30,Product/Feature Releases
-Claude Opus 4.5,2026-01-01,Product/Feature Releases
-Medical Hallucination,2023-09-14,Clinical AI Deployment
-FDA AI Device Recall,2024-10-30,Regulatory/Recall Events
-Ambient AI Scribe Lawsuits,2025-12-09,Privacy and Governance Failure
-Amazon Care Shutdown,2022-08-22,Healthcare AI Deployment
-Ban on AI Prescriptions,2023-03-15,Regulatory Changes
-Dragon Copilot,2025-03-03,Product/Feature Releases
-"1,250+ AI Devices",2025-07-31,Regulatory Changes
-ChatGPT Misdiagnosis,2025-09-15,Clinical Safety Incident
-ChatGPT Data Leak,2023-03-31,Security/Privacy/Trust Events
-MOVEit Breach,2023-05-31,Security/Privacy/Trust Events
-Episource Breach,2025-06-16,Security/Privacy/Trust Events
-HIPAA Tracking Guidance,2022-12-31,Regulatory Changes
-White House Order on AI,2023-10-31,Regulatory Changes
-EU AI Act,2024-03-31,Regulatory Changes
-Healthy Tech Act 2025,2025-02-05,Regulatory Changes
-AI/ML SaMD Action Plan,2021-01-01,Regulatory Changes
-EU AI Act Proposal,2021-04-01,Regulatory Changes
-AI Bill of Rights Blueprint,2022-09-01,Regulatory Changes
-CDS Software Draft Guidance,2023-01-01,Regulatory Changes
-EU AI Act Entered into Force,2024-08-01,Regulatory Changes
-PCCP for Adaptive AI,2024-01-01,Regulatory Changes
-AI Device Software Guidance,2025-01-01,Regulatory Changes
-AI Guidance for Drug Decisions,2025-01-01,Regulatory Changes
-HTI-1 Final Rule,2025-01-01,Regulatory Changes
-Delay of High-Risk AI Act Requirements,2025-11-01,Regulatory Changes
-QMSR Alignment ISO 13485,2026-02-01,Regulatory Changes
-High-Risk AI Classification Draft,2026-03-01,Regulatory Changes
-Black-box Medical AI Risks Highlighted,2020-12-01,Security/Privacy/Trust Events
-AI-assisted Cyberattack Concerns,2021-02-01,Security/Privacy/Trust Events
-Prompt Injection on Bing Chat,2023-02-01,Security/Privacy/Trust Events
-Cybersecurity Risks in AI Medical Devices,2023-03-01,Security/Privacy/Trust Events
-Internal AI Design Theft,2023-07-01,Security/Privacy/Trust Events
-Medical LLM Prompt Leakage,2023-12-01,Security/Privacy/Trust Events
-Indirect Prompt Injection Against ChatGPT Search,2024-12-01,Security/Privacy/Trust Events
-Data Poisoning Attacks on Healthcare AI,2024-12-31,Security/Privacy/Trust Events
-Surge in LLM-enabled Cyber Threats,2025-06-01,Security/Privacy/Trust Events
-Mythos AI Unauthorized Access Investigation,2026-04-01,Security/Privacy/Trust Events
-Mythos AI Offensive Capability Concerns,2026-04-01,Security/Privacy/Trust Events
-Advanced AI Cybersecurity Arms Race,2026-05-01,Security/Privacy/Trust Events
+﻿Category,Event Name,Event Date,Event Type,Year,
+Regulatory & Security Governance,Black-box Medical AI Risks Highlighted,12/31/20,Security/Privacy/Trust Events,2020,
+Regulatory & Security Governance,AI/ML-Based SaMD,1/31/21,Regulatory Changes,2021,
+Regulatory & Security Governance,Proposal for the EU AI Act,4/30/21,Regulatory Changes,2021,
+Human Oversight & Accountability,Amazon Care ShutDown,8/22/22,Product/Feature Releases,2022,
+AI Development & Model Risks,ChatGPT,11/30/22,Product/Feature Releases,2022,
+Regulatory & Security Governance,HIPAA AI Guidance,12/1/22,Regulatory Changes,2022,
+AI Development & Model Risks,Med-PaLM,12/31/22,Product/Feature Releases,2022,
+Regulatory & Security Governance,HIPAA Tracking Guidance,12/31/22,Regulatory Changes,2022,
+AI Development & Model Risks,GPT-4,3/14/23,Product/Feature Releases,2023,
+Human Oversight & Accountability,Ban on AI Prescriptions,3/15/23,Regulatory Changes,2023,
+AI Development & Model Risks,Med-PaLM 2,3/31/23,Product/Feature Releases,2023,
+Privacy & Data Governance,ChatGPT Data Leak,3/31/23,Security/Privacy/Trust Events,2023,
+Privacy & Data Governance,MOVEit Breach,5/31/23,Security/Privacy/Trust Events,2023,
+AI Development & Model Risks,Claude 2,7/11/23,Product/Feature Releases,2023,
+Human Oversight & Accountability,Medical Hallucination,9/14/23,Clinical AI Deployment,2023,
+Regulatory & Security Governance,Internal AI Design Theft,9/30/23,Security/Privacy/Trust Events,2023,
+Regulatory & Security Governance,White House Order on AI,10/31/23,Regulatory Changes,2023,
+AI Development & Model Risks,MEDITRON-70B,11/30/23,Product/Feature Releases,2023,
+AI Development & Model Risks,Gemini 1.0,12/6/23,Product/Feature Releases,2023,
+Regulatory & Security Governance,WHO Generative AI Guidance for Health,1/18/24,Regulatory Changes,2024,
+Clinical Safety & Reliability,Epic Sepsis AI Model Reliability Concerns,2/16/24,Clinical AI Deployment,2024,
+Regulatory & Security Governance,EU AI Act,3/31/24,Regulatory Changes,2024,
+Clinical Safety & Reliability,Med-Gemini,5/6/24,Clinical AI Deployment,2024,
+AI Development & Model Risks,GPT-4o,5/13/24,Product/Feature Releases,2024,
+AI Development & Model Risks,Claude 3.5 Sonnet,6/21/24,Product/Feature Releases,2024,
+Privacy & Data Governance,Personal Health LLM,6/30/24,Product/Feature Releases,2024,
+Clinical Safety & Reliability,FDA AI Device Recall,10/30/24,Regulatory/Recall Events,2024,
+Regulatory & Security Governance,PCCP Final Guidance for Adaptive AI Medical Devices,12/4/24,Regulatory Changes,2024,
+AI Development & Model Risks,Gemini 2.0,12/11/24,Product/Feature Releases,2024,
+Privacy & Data Governance,Optum AI Chatbot Security Exposure,12/13/24,Security/Privacy/Trust Events,2024,
+AI Development & Model Risks,Data Poisoning Attacks,12/31/24,Security/Privacy/Trust Events,2024,
+Regulatory & Security Governance,Healthy Tech Act 2025,2/5/25,Regulatory Changes,2025,
+Human Oversight & Accountability,Dragon Copilot,3/3/25,Product/Feature Releases,2025,
+AI Development & Model Risks,MedGemma,5/30/25,Product/Feature Releases,2025,
+Privacy & Data Governance,Episource Breach,6/16/25,Security/Privacy/Trust Events,2025,
+AI Development & Model Risks,OpenEvidence-Doximity AI Security Lawsuit,6/20/25,Security/Privacy/Trust Events,2025,
+Privacy & Data Governance,Surge in LLM-enabled Cyber Threats,6/30/25,Security/Privacy/Trust Events,2025,
+Human Oversight & Accountability,"1,250+ AI Devices",7/31/25,Regulatory Changes,2025,
+Regulatory & Security Governance,"Over 1,250 AI-enabled Medical Devices Authorized",7/31/25,Regulatory Changes,2025,
+Human Oversight & Accountability,ChatGPT Misdiagnosis,9/15/25,Regulatory Changes,2025,
+Human Oversight & Accountability,Ambient AI Scribe Lawsuits,12/9/25,Privacy and Governance Failure,2025,
+Regulatory & Security Governance,Washington State AI Policy Initiatives,12/31/25,Regulatory Changes,2025,
+,,,,,

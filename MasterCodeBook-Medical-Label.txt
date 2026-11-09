@@ -13,8 +13,8 @@ You must carefully read ALL available information before assigning labels:
 1. TITLE
 2. POST
 3. TOP COMMENTS
-4. SECURITY-PRIVACY-TRUST-RELATED-NOTES (if available)
-5. FEW-SHOT EXAMPLES (if provided)
+4. SECURITY-PRIVACY-TRUST-RELATED-NOTES 
+5. FEW-SHOT EXAMPLES 
 
 ====================================================
 ANNOTATION PHILOSOPHY
